@@ -125,7 +125,7 @@ function HomeReviewer() {
        </Container>
        <Container className='mt-5'>
        <h1 style={{color:'#A01E1E',textAlign:'center'}}>Indexing Partners</h1>
-        <Row className='mt-3'>
+        <Row className='mt-3 ms-3'>
             <Col className='m-1'>
             <Image src={yahoo}/>
             </Col>
@@ -140,7 +140,7 @@ function HomeReviewer() {
             </Col>
            
         </Row>
-        <Row className='mt-3'>
+        <Row className='mt-3 ms-3'>
             <Col className='m-1'>
             <Image src={asr} />
             </Col>
@@ -155,7 +155,7 @@ function HomeReviewer() {
             </Col>
            
         </Row>
-        <Row className='mt-3'>
+        <Row className='mt-3 ms-3'>
             <Col className='m-1'>
             <Image src={csd} />
             </Col>
@@ -170,7 +170,7 @@ function HomeReviewer() {
             </Col>
            
         </Row>
-        <Row className='mt-3'>
+        <Row className='mt-3 ms-3'>
             <Col className='m-1'>
             <Image src={fs} />
             </Col>
@@ -185,7 +185,7 @@ function HomeReviewer() {
             </Col>
            
         </Row>
-        <Row className='mt-3'>
+        <Row className='mt-3 ms-3'>
             <Col className='m-1'>
             <Image src={is} />
             </Col>

@@ -177,9 +177,9 @@ function HomePageComp() {
             
         </Row>
        </Container>
-       <Container className='mt-5'>
+       <Container className='mt-5' fluid>
        <h1 style={{color:'#A01E1E',textAlign:'center'}}>Indexing Partners</h1>
-        <Row className='mt-3'>
+        <Row className='mt-3 ms-3' >
             <Col className='m-1'>
             <Image src={yahoo} />
             </Col>
@@ -194,7 +194,7 @@ function HomePageComp() {
             </Col>
            
         </Row>
-        <Row className='mt-3'>
+        <Row className='mt-3 ms-3'>
             <Col className='m-1'>
             <Image src={asr} />
             </Col>
@@ -209,7 +209,7 @@ function HomePageComp() {
             </Col>
            
         </Row>
-        <Row className='mt-3'>
+        <Row className='mt-3 ms-3'>
             <Col className='m-1'>
             <Image src={csd} />
             </Col>
@@ -224,7 +224,7 @@ function HomePageComp() {
             </Col>
            
         </Row>
-        <Row className='mt-3'>
+        <Row className='mt-3 ms-3'>
             <Col className='m-1'>
             <Image src={fs} />
             </Col>
@@ -239,7 +239,7 @@ function HomePageComp() {
             </Col>
            
         </Row>
-        <Row className='mt-3'>
+        <Row className='mt-3 ms-3'>
             <Col className='m-1'>
             <Image src={is} />
             </Col>

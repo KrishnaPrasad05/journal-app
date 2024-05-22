@@ -1,11 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Breadcrumb, Button, Card, Col, Container, Image, ListGroup, Row ,Table,Form, Modal } from 'react-bootstrap';
-import pdf from '../../Assets/Images/pdf.png';
+
 import { Link } from 'react-router-dom';
 import HeaderReviewer from '../Reviewer/HeaderReviewer';
 import FooterReviewer from '../Reviewer/FooterReviewer';
 import AppContext from '../AppContext';
-
+import view from '../../Assets/Images/view.png'
 function PaperReviewComp() {
     const [currentPaper, setCurrentPaper] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
@@ -114,6 +114,7 @@ function PaperReviewComp() {
                                 <th style={{backgroundColor:'#A01E1E',color:'white',fontWeight:600,textAlign:'center',borderColor:'grey'}}>S.No</th>
                                 <th style={{backgroundColor:'#A01E1E',color:'white',fontWeight:600,textAlign:'center',borderColor:'grey'}}>Title</th>
                                 <th style={{backgroundColor:'#A01E1E',color:'white',fontWeight:600,textAlign:'center',borderColor:'grey'}}>Authors</th>
+                                <th style={{backgroundColor:'#A01E1E',color:'white',fontWeight:600,textAlign:'center',borderColor:'grey'}}>Status</th>
                                 <th style={{backgroundColor:'#A01E1E',color:'white',fontWeight:600,textAlign:'center',borderColor:'grey'}}>Paper</th>
                                 <th style={{backgroundColor:'#A01E1E',color:'white',fontWeight:600,textAlign:'center',borderColor:'grey'}}>Action</th>
                             </tr>
@@ -136,7 +137,8 @@ function PaperReviewComp() {
                                             <p style={{color:'#008000',fontWeight:600}}>{paper.name05}</p>
                                         </div>
                                     </td>
-                                    <td>{paper.paper}</td>
+                                    <td>{paper.status}</td>
+                                    <td><a href={paper.paper} target='blank'><Image src={view} style={{width:'40px',height:'40px'}}/></a></td>
                                     <td><Button onClick={() => handleUpdateButtonClick(paper)}>Update</Button></td>
                                 </tr>
                             ))}

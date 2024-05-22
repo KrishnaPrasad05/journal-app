@@ -9,6 +9,7 @@ function SubmitPaperComp() {
   const [formData, setFormData] = useState({
     title:'',
     vol:'',
+    paper:'',
     name01: '',
     dept01: '',
     org01: '',
@@ -40,16 +41,89 @@ function SubmitPaperComp() {
     email05: '',
     phn05: '',
     pubPaper:'/current-isssue',
-    cetificate:'/current-isssue',
+    certificate:'/current-isssue',
     status:'In-review'
   });
   const { variableValue, setVariableValue } = useContext(AppContext);
   const [showModal, setShowModal] = useState(false);
 
+
+  const [errors, setErrors] = useState({
+    title: '',
+    vol: '',
+    paper: '',
+    name01: '',
+    dept01: '',
+    org01: '',
+    ctry01: '',
+    email01: '',
+    phn01: ''
+  });
+
+  const validateForm = () => {
+    let formIsValid = true;
+    const newErrors = { title: '', vol: '', paper: '',
+    name01: '',
+    dept01: '',
+    org01: '',
+    ctry01: '',
+    email01: '',
+    phn01: '' };
+
+    if (!formData.title) {
+      formIsValid = false;
+      newErrors.title = 'Title is required';
+    }
+    if (!formData.vol) {
+      formIsValid = false;
+      newErrors.vol = 'Volume is required';
+    }
+   
+    
+    if (!formData.paper) {
+      formIsValid = false;
+      newErrors.paper = 'Paper is required';
+    }
+    if (!formData.name01) {
+      formIsValid = false;
+      newErrors.name01 = 'Name of author 1 is required';
+    }
+    if (!formData.dept01) {
+      formIsValid = false;
+      newErrors.dept01 = 'Department of author 1 is required';
+    }
+    if (!formData.org01) {
+      formIsValid = false;
+      newErrors.org01 = 'Organisation of author 1 is required';
+    }
+    if (!formData.ctry01) {
+      formIsValid = false;
+      newErrors.ctry01 = 'Country of author 1 is required';
+    }
+    if (!formData.email01) {
+      formIsValid = false;
+      newErrors.email01 = 'Email of author 1 is required';
+    }
+    if (!formData.phn01) {
+      formIsValid = false;
+      newErrors.phn01 = 'Phone number of author 1 is required';
+    }
+
+    setErrors(newErrors);
+    return formIsValid;
+  };
+
+
+
   // Function to handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent default form submission behavior
     
+
+    if (!validateForm()) {
+      return;
+    }
+
     try {
       const response = await fetch(`${variableValue}/papers`, {
         method: 'POST',
@@ -113,6 +187,112 @@ function SubmitPaperComp() {
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+
+
+    if (name === 'vol' && value === '') {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        vol: 'Volume is required',
+      }));
+    } else if (name === 'vol') {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        vol: '',
+      }));
+    }
+
+
+    if (name === 'title' && value === '') {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        title: 'Title is required',
+      }));
+    } else if (name === 'title') {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        title: '',
+      }));
+    }
+
+    if (name === 'paper' && value === '') {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        paper: 'Paper is required',
+      }));
+    } else if (name === 'paper') {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        paper: '',
+      }));
+    }
+
+    if (name === 'name01' && value === '') {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        name01: 'Name of author 1 is required',
+      }));
+    } else if (name === 'name01') {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        name01: '',
+      }));
+    }
+    if (name === 'dept01' && value === '') {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        dept01: 'Department of author 1 is required',
+      }));
+    } else if (name === 'dept01') {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        dept01: '',
+      }));
+    }
+    if (name === 'org01' && value === '') {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        org01: 'Organisation of author 1 is required',
+      }));
+    } else if (name === 'org01') {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        org01: '',
+      }));
+    }
+    if (name === 'ctry01' && value === '') {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        ctry01: 'Country of author 1 is required',
+      }));
+    } else if (name === 'ctry01') {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        ctry01: '',
+      }));
+    }
+    if (name === 'email01' && value === '') {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        email01: 'Email of author 1 is required',
+      }));
+    } else if (name === 'email01') {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        email01: '',
+      }));
+    }
+    if (name === 'phn01' && value === '') {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        phn01: 'Phone number of author 1 is required',
+      }));
+    } else if (name === 'phn01') {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        phn01: '',
+      }));
+    }
+
   };
 
   function handleReset(){
@@ -151,6 +331,7 @@ function SubmitPaperComp() {
       email05: '',
       phn05: ''
     });
+    setErrors({ title: '', vol: '', paper: '' });
   }
 
   return (
@@ -177,21 +358,23 @@ function SubmitPaperComp() {
   >
     <option value="">Choose your volume</option>
     <option value="mar2024">Volume 01, Issue 01, March 2024</option>
-    
+   
   </Form.Control>
-  
+  {errors.vol && <div style={{ color: 'red' }}>{errors.vol}</div>}
 </Form.Group>
                 </Row>
                 <Row className="m-1">
                 <Form.Group className='mb-3'  controlId="title" >
         <Form.Label style={{fontWeight:600}}>Title of Paper<span style={{color:'red',fontSize:'18px'}}>*</span></Form.Label>
         <Form.Control type="text" name='title' placeholder="Enter title of paper " value={formData.title} onChange={handleInputChange}/>
+        {errors.title && <div style={{ color: 'red' }}>{errors.title}</div>}
       </Form.Group>
                 </Row>
                 <Row className="m-1">
                 <Form.Group className='mb-3'  controlId="paper" >
         <Form.Label style={{fontWeight:600}}>Submit Paper<span style={{color:'red',fontSize:'18px'}}>*</span></Form.Label>
         <Form.Control type="text" name='paper' placeholder="Enter url of paper " value={formData.paper} onChange={handleInputChange}/>
+        {errors.paper && <div style={{ color: 'red' }}>{errors.paper}</div>}
       </Form.Group>
       <p style={{color:'grey'}}>Max. File Size : 2MB. Please Upload Word File (.docx, .doc) extension only.</p>
                 </Row>
@@ -201,12 +384,14 @@ function SubmitPaperComp() {
                 <Form.Group className="m-2" controlId="name01" >
         <Form.Label style={{fontWeight:600}}>Name<span style={{color:'red',fontSize:'18px'}}>*</span></Form.Label>
         <Form.Control type="text" name='name01' placeholder="Enter name " value={formData.name01} onChange={handleInputChange}/>
+        {errors.name01 && <div style={{ color: 'red' }}>{errors.name01}</div>}
       </Form.Group>
                 </Col>
                 <Col xs={12} sm={12} md={6} lg={6} xl={6} xxl={6}>
                 <Form.Group className="m-2" controlId="dept01">
         <Form.Label style={{fontWeight:600}}>Department<span style={{color:'red',fontSize:'18px'}}>*</span></Form.Label>
         <Form.Control type="text" name='dept01' placeholder="Enter department" value={formData.dept01} onChange={handleInputChange}/>
+        {errors.dept01 && <div style={{ color: 'red' }}>{errors.dept01}</div>}
       </Form.Group>
                 </Col>
             </Row>
@@ -215,12 +400,14 @@ function SubmitPaperComp() {
                 <Form.Group className="m-2" controlId="org01">
         <Form.Label style={{fontWeight:600}}>Organization Name<span style={{color:'red',fontSize:'18px'}}>*</span></Form.Label>
         <Form.Control type="text" name='org01' placeholder="Enter organization name" value={formData.org01} onChange={handleInputChange}/>
+        {errors.org01 && <div style={{ color: 'red' }}>{errors.org01}</div>}
       </Form.Group>
                 </Col>
                 <Col xs={12} sm={12} md={6} lg={6} xl={6} xxl={6}>
                 <Form.Group className="m-2" controlId="ctry01">
         <Form.Label style={{fontWeight:600}}>Country<span style={{color:'red',fontSize:'18px'}}>*</span></Form.Label>
         <Form.Control type="text" name='ctry01' placeholder="Enter country" value={formData.ctry01} onChange={handleInputChange}/>
+        {errors.ctry01 && <div style={{ color: 'red' }}>{errors.ctry01}</div>}
       </Form.Group>
                 </Col>
             </Row>
@@ -229,12 +416,14 @@ function SubmitPaperComp() {
                 <Form.Group className="m-2" controlId="email01">
         <Form.Label style={{fontWeight:600}}>Email address<span style={{color:'red',fontSize:'18px'}}>*</span></Form.Label>
         <Form.Control type="text" name='email01' placeholder="Enter email address" value={formData.email01} onChange={handleInputChange}/>
+        {errors.email01 && <div style={{ color: 'red' }}>{errors.email01}</div>}
       </Form.Group>
                 </Col>
                 <Col xs={12} sm={12} md={6} lg={6} xl={6} xxl={6}>
                 <Form.Group className="m-2" controlId="phn01">
         <Form.Label style={{fontWeight:600}}>Phone number<span style={{color:'red',fontSize:'18px'}}>*</span></Form.Label>
         <Form.Control type="text" name='phn01' placeholder="Enter phone number" value={formData.phn01} onChange={handleInputChange}/>
+        {errors.phn01 && <div style={{ color: 'red' }}>{errors.phn01}</div>}
       </Form.Group>
                 </Col>
             </Row>
