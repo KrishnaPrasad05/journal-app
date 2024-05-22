@@ -9,7 +9,7 @@ function FooterAdmin() {
             <Row className='pt-3'>
                 <Col xs={12} sm={6} md={6} xl={3}>
                 <Image src={logo} style={{width:'400px',height:'150px'}} className='img-fluid'/>
-                <p className='text-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <p className='text-light'>IJRMA is dedicated to advancing knowledge across diverse fields including Science and Technology, Engineering, Social Sciences, Humanities, Business, Health Sciences, and Environmental Studies. As a peer-reviewed, open-access journal, we provide a robust platform for researchers, scholars, and professionals worldwide to publish and access cutting-edge research. </p>
                 </Col>
                 <Col xs={12} sm={6} md={6} xl={3}>
                 <h4 style={{color:'yellow'}}>Services</h4>
