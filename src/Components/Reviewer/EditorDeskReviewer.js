@@ -77,7 +77,7 @@ function EditorDeskReviewer() {
                 <p>
                   Sincerely,
                   <br />
-                  Krishna Prasad S.
+                  Krishna Prasad S
                   <br />
                   Editor-in-Chief, International Journal for Research in Multidisciplinary Advancements (IJRMA)
                 </p>
