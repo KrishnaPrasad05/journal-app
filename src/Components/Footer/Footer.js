@@ -30,7 +30,7 @@ function Footer() {
  </div>
                 </Col>
                 <Col xs={12} sm={6} md={6} xl={3}>
-                <div style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
+                <div style={{textAlign:'center'}}>
                 <h4 style={{color:'yellow'}}>Useful Links</h4>
                 <ul style={{fontWeight:600,lineHeight:'35px',listStyle:'none'}}>
  <li><a href='/' style={{textDecoration:'none',color:'white'}}>Home</a></li>
