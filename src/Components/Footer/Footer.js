@@ -31,7 +31,7 @@ function Footer() {
  <li><a href='/' style={{textDecoration:'none',color:'white'}}>Home</a></li>
  <li><a href='/about-us' style={{textDecoration:'none',color:'white'}}>About us</a></li>
  <li><a href='/guidelines' style={{textDecoration:'none',color:'white'}}>Guidelines</a></li>
- <li><a href='/submit-paper' style={{textDecoration:'none',color:'white'}}>Submit Papaer</a></li>
+ <li><a href='/submit-paper' style={{textDecoration:'none',color:'white'}}>Submit Paper</a></li>
  <li><a href='/processing-charges' style={{textDecoration:'none',color:'white'}}>Processing Fee</a></li>
 
  <li><a href='/contact-us' style={{textDecoration:'none',color:'white'}}> Contact Us</a></li>
