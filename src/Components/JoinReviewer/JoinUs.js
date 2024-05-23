@@ -3,6 +3,7 @@ import { Breadcrumb, Card, Col, Container, ListGroup, Row } from 'react-bootstra
 import { Link } from 'react-router-dom';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import TopButton from '../TopButton';
 
 
 const JoinUs = () => {
@@ -10,6 +11,7 @@ const JoinUs = () => {
 
   return (
     <div>
+      <TopButton/>
         <Header/>
         <Breadcrumb style={{backgroundColor:' #E8E7E7'}}>
  <Breadcrumb.Item style={{marginLeft:'20px'}}><Link to="/">Home</Link></Breadcrumb.Item>

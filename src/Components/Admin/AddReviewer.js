@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Button, Container, Modal, Row, Form, Table, Image } from 'react-bootstrap';
 import view from '../../Assets/Images/view.png';
 import FooterAdmin from './FooterAdmin';
+import TopButton from '../TopButton';
 
 function AddReviewer() {
     const [reviewers, setReviewers] = useState([]);
@@ -102,6 +103,7 @@ function AddReviewer() {
 
     return (
         <div>
+            <TopButton/>
             <Container>
                 <Row>
                     <Table striped bordered hover style={{ borderColor: 'black' }}>

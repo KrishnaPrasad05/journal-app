@@ -6,6 +6,7 @@ import HeaderReviewer from '../Reviewer/HeaderReviewer';
 import FooterReviewer from '../Reviewer/FooterReviewer';
 import AppContext from '../AppContext';
 import view from '../../Assets/Images/view.png'
+import TopButton from '../TopButton';
 function PaperReviewComp() {
     const [currentPaper, setCurrentPaper] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
@@ -86,6 +87,7 @@ function PaperReviewComp() {
 
     return (
         <div>
+            <TopButton/>
             <HeaderReviewer/>
             <Container>
                 <Container>

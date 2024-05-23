@@ -3,6 +3,7 @@ import { Breadcrumb, Button, Card, Col, Container, Image, ListGroup, Row ,Table,
 import pdf from '../../Assets/Images/pdf.png'
 import { Link } from 'react-router-dom';
 import AppContext from '../AppContext';
+import TopButton from '../TopButton';
 function CurrentIssueComp() {
   const { variableValue, setVariableValue } = useContext(AppContext);
     const [currentPaper, setCurrentPaper] = useState([]);
@@ -23,6 +24,7 @@ function CurrentIssueComp() {
     );
   return (
     <div>
+      <TopButton/>
       <Breadcrumb style={{backgroundColor:' #E8E7E7'}}>
       <Breadcrumb.Item style={{marginLeft:'20px'}}><Link to="/">Home</Link></Breadcrumb.Item>
  <Breadcrumb.Item active>Current Issue</Breadcrumb.Item>

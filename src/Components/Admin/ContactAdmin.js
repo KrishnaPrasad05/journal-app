@@ -4,6 +4,7 @@ import AdminHeader from '../Admin/Adminheader';
 import AppContext from '../AppContext';
 import FooterAdmin from './FooterAdmin';
 import { Link } from 'react-router-dom';
+import TopButton from '../TopButton';
 
 const ContactAdmin = () => {
     const { variableValue, setVariableValue } = useContext(AppContext);
@@ -41,6 +42,7 @@ const ContactAdmin = () => {
 
     return (
         <section>
+            <TopButton/>
             <AdminHeader/>
             <Breadcrumb style={{backgroundColor:' #E8E7E7'}}>
 <Breadcrumb.Item style={{marginLeft:'20px'}}><Link to="/admin-home">Home</Link></Breadcrumb.Item>

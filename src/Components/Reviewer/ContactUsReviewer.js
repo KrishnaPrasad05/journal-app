@@ -4,6 +4,7 @@ import FooterReviewer from './FooterReviewer'
 import { Button, Container, Form, Row, Breadcrumb, Modal, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import AppContext from '../AppContext'
+import TopButton from '../TopButton'
 
 function ContactUsReviewer() {
   const [formData, setFormData] = useState({
@@ -97,6 +98,7 @@ function ContactUsReviewer() {
 
   return (
     <div>
+      <TopButton/>
       <HeaderReviewer />
       <Breadcrumb style={{ backgroundColor: ' #E8E7E7' }}>
         <Breadcrumb.Item style={{ marginLeft: '20px' }}><Link to="/reviewer-home">Home</Link></Breadcrumb.Item>

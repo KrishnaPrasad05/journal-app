@@ -4,6 +4,7 @@ import { Card, Button, Container, Row, Col, Modal ,Breadcrumb} from 'react-boots
 import AppContext from '../AppContext';
 
 import { Link } from 'react-router-dom';
+import TopButton from '../TopButton';
 
 const AnnouncementsComp = () => {
     const { variableValue, setVariableValue } = useContext(AppContext);
@@ -28,7 +29,7 @@ const AnnouncementsComp = () => {
 
     return (
         <section>
-            
+            <TopButton/>
             <Breadcrumb style={{backgroundColor:' #E8E7E7'}}>
 <Breadcrumb.Item style={{marginLeft:'20px'}}><Link to="/">Home</Link></Breadcrumb.Item>
 <Breadcrumb.Item active>Announcements</Breadcrumb.Item>

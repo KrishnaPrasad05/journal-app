@@ -42,6 +42,7 @@ import IndFee from '../ProcessingCharges/IndFee';
 import IntFee from '../ProcessingCharges/IntFee';
 import JoinUs from '../JoinReviewer/JoinUs';
 import ReviewerProfile from '../Reviewer/ProfileReviewer';
+import TopButton from '../TopButton';
 
 function Routing() {
   return (
@@ -86,6 +87,7 @@ function Routing() {
         <Route path="/reviewer-announcements" element={<AnnouncementsReviewer/>}/> {/* Use element prop instead of children */}
         <Route path="/indian-author-fee" element={<IndFee/>}/> {/* Use element prop instead of children */}
         <Route path="/international-author-fee" element={<IntFee/>}/> {/* Use element prop instead of children */}
+        <Route path="/top" element={<TopButton/>}/> {/* Use element prop instead of children */}
       </Routes>
     </Router>
   )

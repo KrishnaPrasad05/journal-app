@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import AppContext from '../AppContext';
+import TopButton from '../TopButton';
 
 const LogInAdminComp = () => {
   const [formData, setFormData] = useState({
@@ -85,6 +86,7 @@ const LogInAdminComp = () => {
 
   return (
     <section>
+      <TopButton/>
       <Header />
       <Container style={{ borderRadius: '15px', marginTop: '1.2rem', marginBottom: '1rem' }}>
         <Row>

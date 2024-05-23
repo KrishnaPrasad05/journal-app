@@ -28,6 +28,7 @@ import iijs from '../../Assets/Images/index/iijs.jpg'
 import be from '../../Assets/Images/index/be.jpg'
 import cobi from '../../Assets/Images/index/cobi.jpg'
 import sji from '../../Assets/Images/index/sji.jpg'
+import TopButton from '../TopButton';
 function HomePageComp() {
   useEffect(()=>{
     window.scrollTo(0,0);
@@ -56,10 +57,10 @@ function HomePageComp() {
             <Container >
                 <Row >
                     <Col className='m-1'  style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
-                    <Button as={Link} to='/publication-process' style={{backgroundColor:'#A01E1E',border:0}}>Publication Process</Button>
+                    <Button as={Link} to='/publication-process' style={{backgroundColor:'#A01E1E',border:0,width:'150px'}}>To Publish</Button>
                     </Col>
                     <Col className='m-1'  style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
-                    <Button as={Link} to='/submit-paper' style={{backgroundColor:'#A01E1E',border:0}}>Submit paper</Button>
+                    <Button as={Link} to='/submit-paper' style={{backgroundColor:'#A01E1E',border:0,width:'150px'}}>Submit paper</Button>
                     </Col>
                 </Row>
             </Container>
@@ -151,106 +152,190 @@ function HomePageComp() {
       
         <Row className='mt-5'> 
             <Col className='m-1' >
+              <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+
+              
             <Card style={{width:'18rem'}}>
             <div style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',backgroundColor:'#A01E1E',padding:'15px',borderRadius:'7px'}}>
                 <h3 className='text-light'>Papers Published</h3>
                 <NumberScroller initialValue={0} finalValue={7500} duration={5} />
             </div>
             </Card>
+            </div>
             </Col>
             <Col className='m-1'>
+            <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
             <Card style={{width:'18rem'}}>
             <div style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',backgroundColor:'#A01E1E',padding:'15px',borderRadius:'7px'}}>
                 <h3 className='text-light'>Authors</h3>
                 <NumberScroller initialValue={0} finalValue={2000} duration={5} />
             </div>
             </Card>
+            </div>
             </Col>
             <Col className='m-1'>
+            <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
             <Card style={{width:'18rem'}}>
             <div style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',backgroundColor:'#A01E1E',padding:'15px',borderRadius:'7px'}}>
                 <h3 className='text-light'>Countries</h3>
                 <NumberScroller initialValue={0} finalValue={30} duration={5} />
             </div>
             </Card>
+            </div>
             </Col>
             
         </Row>
        </Container>
        <Container className='mt-5' fluid>
        <h1 style={{color:'#A01E1E',textAlign:'center'}}>Indexing Partners</h1>
-        <Row className='mt-3 ms-3' >
+      
+
+       
+        <Row className='mt-3' >
+       
             <Col className='m-1'>
+            <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
             <Image src={yahoo} />
+            </div>
             </Col>
             <Col className='m-1'>
+               <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
             <Image src={wzb} />
+            </div>
             </Col>
             <Col className='m-1'>
+               <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
             <Image src={rs} />
+            </div>
             </Col>
             <Col className='m-1'>
+               <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
             <Image src={issuu} />
+            </div>
             </Col>
-           
+            
         </Row>
-        <Row className='mt-3 ms-3'>
+       
+        <Row className='mt-3'>
             <Col className='m-1'>
-            <Image src={asr} />
+               <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+               <Image src={asr} />
+               </div>
+            
             </Col>
             <Col className='m-1'>
+               <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+
+              
             <Image src={pl} />
+            </div>
             </Col>
             <Col className='m-1'>
+               <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+
+              
             <Image src={google} />
+            </div>
             </Col>
             <Col className='m-1'>
+               <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+
+              
             <Image src={r} />
+            </div>
             </Col>
            
         </Row>
-        <Row className='mt-3 ms-3'>
+        <Row className='mt-3'>
             <Col className='m-1'>
+               <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+
+              
             <Image src={csd} />
+            </div>
             </Col>
             <Col className='m-1'>
+               <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+
+              
             <Image src={au} />
+            </div>
             </Col>
             <Col className='m-1'>
+               <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+
+              
             <Image src={ac} />
+            </div>
             </Col>
             <Col className='m-1'>
+               <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+
+              
             <Image src={ic} />
+            </div>
             </Col>
            
         </Row>
-        <Row className='mt-3 ms-3'>
+        <Row className='mt-3'>
             <Col className='m-1'>
+               <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+
+              
             <Image src={fs} />
+            </div>
             </Col>
             <Col className='m-1'>
+               <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+
+              
             <Image src={sc} />
+            </div>
             </Col>
             <Col className='m-1'>
+               <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+
+              
             <Image src={sct} />
+            </div>
             </Col>
             <Col className='m-1'>
+               <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+
+              
             <Image src={gif} />
+            </div>
             </Col>
            
         </Row>
-        <Row className='mt-3 ms-3'>
+        <Row className='mt-3'>
             <Col className='m-1'>
+               <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+
+              
             <Image src={is} />
+            </div>
             </Col>
             <Col className='m-1'>
+               <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+
+              
             <Image src={ejl} />
+            </div>
             </Col>
             <Col className='m-1'>
+               <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+
+              
             <Image src={be} />
+            </div>
             </Col>
             <Col className='m-1'>
+               <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+
+              
             <Image src={cobi} />
+            </div>
             </Col>
            
         </Row>
@@ -388,6 +473,7 @@ function HomePageComp() {
        </Col>
    </Row>
 </Container>
+<TopButton/>
 </div>
   )
 }

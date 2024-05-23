@@ -8,10 +8,13 @@ function FooterReviewer() {
         <Container fluid style={{backgroundColor:'#A01E1E'}}>
             <Row className='pt-3'>
                 <Col xs={12} sm={6} md={6} xl={3}>
+                <div style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
                 <Image src={logo} style={{width:'400px',height:'150px'}} className='img-fluid'/>
                 <p className='text-light'>IJRMA is dedicated to advancing knowledge across diverse fields including Science and Technology, Engineering, Social Sciences, Humanities, Business, Health Sciences, and Environmental Studies. As a peer-reviewed, open-access journal, we provide a robust platform for researchers, scholars, and professionals worldwide to publish and access Cutting-edge Research.</p>
+               </div>
                 </Col>
                 <Col xs={12} sm={6} md={6} xl={3}>
+                <div style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
                 <h4 style={{color:'yellow'}}>Services</h4>
                 <ul style={{fontWeight:600,lineHeight:'35px',color:'white'}}>
  <li>High Impact Factor : 7.583</li>
@@ -24,8 +27,10 @@ function FooterReviewer() {
 <li>Best Peer Reviewed Journal for Paper Publication</li>
 
  </ul>
+ </div>
                 </Col>
                 <Col xs={12} sm={6} md={6} xl={3}>
+                <div style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
                 <h4 style={{color:'yellow'}}>Useful Links</h4>
                 <ul style={{fontWeight:600,lineHeight:'35px',listStyle:'none'}}>
  <li><a href='/reviewer-home' style={{textDecoration:'none',color:'white'}}>Home</a></li>
@@ -37,8 +42,10 @@ function FooterReviewer() {
  <li><a href='/reviewer-contact-us' style={{textDecoration:'none',color:'white'}}> Contact Us</a></li>
 
  </ul>
+ </div>
                 </Col>
                 <Col xs={12} sm={6} md={6} xl={3}>
+                <div style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
                 <h4 style={{color:'yellow'}}>Get in touch</h4>
                 <h6 style={{color:'#cccccc'}}>Phone</h6>
                 <p style={{color:'white'}}>+91-9900900912</p>
@@ -50,7 +57,7 @@ function FooterReviewer() {
                 <p>Sona Road</p>
                 <p>Salem</p>
                 </div>
-                
+                </div>
                 </Col>
             </Row>
             <Row>

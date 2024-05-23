@@ -30,10 +30,12 @@ import cobi from '../../Assets/Images/index/cobi.jpg'
 import sji from '../../Assets/Images/index/sji.jpg'
 import HeaderAdmin from '../Admin/Adminheader';
 import FooterAdmin from './FooterAdmin';
+import TopButton from '../TopButton';
 
 function HomeAdmin() {
   return (
     <div>
+        <TopButton/>
         <HeaderAdmin/>
     <Breadcrumb style={{backgroundColor:' #E8E7E7'}}>
  

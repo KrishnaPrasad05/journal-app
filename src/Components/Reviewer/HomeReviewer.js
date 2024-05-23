@@ -30,6 +30,7 @@ import cobi from '../../Assets/Images/index/cobi.jpg'
 import sji from '../../Assets/Images/index/sji.jpg'
 import HeaderReviewer from './HeaderReviewer';
 import FooterReviewer from './FooterReviewer';
+import TopButton from '../TopButton';
 function HomeReviewer() {
   /* const targetRef = useRef(null);
   useEffect(() => {
@@ -39,6 +40,7 @@ function HomeReviewer() {
   }, []); */
   return (
     <div>
+      <TopButton/>
         <HeaderReviewer/>
     <Breadcrumb style={{backgroundColor:' #E8E7E7'}}>
  

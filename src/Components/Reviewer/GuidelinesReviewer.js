@@ -6,9 +6,11 @@ import { Breadcrumb, Card, Col, Container, Image, ListGroup, Row } from 'react-b
 import check from '../../Assets/Images/check.png'
 import flow from '../../Assets/Images/flowchart.jpg'
 import { Link } from 'react-router-dom'
+import TopButton from '../TopButton'
 function GuidelinesReviewer() {
   return (
     <div>
+        <TopButton/>
       <HeaderReviewer/>
     <Breadcrumb style={{backgroundColor:' #E8E7E7'}}>
 <Breadcrumb.Item style={{marginLeft:'20px'}}><Link to="/reviewer-home">Home</Link></Breadcrumb.Item>

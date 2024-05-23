@@ -2,10 +2,12 @@ import React from 'react'
 import { Breadcrumb, Card, Col, Container, Image, ListGroup, Row, Table } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import doi from '../../Assets/Images/doi.jpg'
+import TopButton from '../TopButton'
 function DOIComp() {
   return (
     <div>
         <div>
+          <TopButton/>
         <Breadcrumb style={{backgroundColor:' #E8E7E7'}}>
  <Breadcrumb.Item style={{marginLeft:'20px'}}><Link to="/">Home</Link></Breadcrumb.Item>
  <Breadcrumb.Item active>DOI</Breadcrumb.Item>

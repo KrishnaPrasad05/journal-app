@@ -2,12 +2,14 @@ import React from 'react';
 import BarGraph from '../BarGraph'; // Path to your BarGraph component
 import { Link } from 'react-router-dom';
 import { Breadcrumb, Card, ListGroup,Container,Col,Row } from 'react-bootstrap';
+import TopButton from '../TopButton';
 
 const CitationComp = () => {
  
 
   return (
     <div>
+      <TopButton/>
         <Breadcrumb style={{backgroundColor:' #E8E7E7'}}>
  <Breadcrumb.Item style={{marginLeft:'20px'}}><Link to="/">Home</Link></Breadcrumb.Item>
  <Breadcrumb.Item active>Citations</Breadcrumb.Item>

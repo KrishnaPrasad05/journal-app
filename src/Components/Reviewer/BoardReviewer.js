@@ -4,6 +4,7 @@ import {  Link } from 'react-router-dom';
 import FooterReviewer from './FooterReviewer';
 import HeaderReviewer from './HeaderReviewer';
 import AppContext from '../AppContext';
+import TopButton from '../TopButton';
 function BoardReviewer() {
   const { variableValue, setVariableValue } = useContext(AppContext);
     const [reviewer, setReviewer] = useState([]);
@@ -15,6 +16,7 @@ function BoardReviewer() {
     }, []);
   return (
     <div>
+      <TopButton/>
       <HeaderReviewer/>
     <Breadcrumb style={{backgroundColor:' #E8E7E7'}}>
  <Breadcrumb.Item style={{marginLeft:'20px'}}><Link to="/reviewer-home">Home</Link></Breadcrumb.Item>

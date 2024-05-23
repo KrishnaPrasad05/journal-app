@@ -3,6 +3,7 @@ import React, { useContext, useState } from 'react'
 import { Button, Container, Form, Row, Breadcrumb, Modal, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import AppContext from '../AppContext'
+import TopButton from '../TopButton';
 
 function UserContactUsComp() {
   const [formData, setFormData] = useState({
@@ -96,6 +97,7 @@ function UserContactUsComp() {
 
   return (
     <div>
+      <TopButton/>
       <Breadcrumb style={{ backgroundColor: ' #E8E7E7' }}>
         <Breadcrumb.Item style={{ marginLeft: '20px' }}><Link to="/reviewer-home">Home</Link></Breadcrumb.Item>
         <Breadcrumb.Item active>Contact Us</Breadcrumb.Item>

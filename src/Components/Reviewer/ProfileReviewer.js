@@ -4,6 +4,7 @@ import { Card, Container, Row, Col, Button, Modal, Form } from 'react-bootstrap'
 import AppContext from '../AppContext';
 import HeaderReviewer from './HeaderReviewer';
 import FooterReviewer from './FooterReviewer';
+import TopButton from '../TopButton';
 
 const ReviewerProfile = () => {
   const { variableValue } = useContext(AppContext);
@@ -65,6 +66,7 @@ const ReviewerProfile = () => {
 
   return (
     <div>   
+      <TopButton/>
         <HeaderReviewer/> 
         <Container className="mt-2 p-3">
       <Row className="justify-content-md-center">

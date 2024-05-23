@@ -6,6 +6,7 @@ import AppContext from '../AppContext';
 import { Link } from 'react-router-dom';
 import HeaderReviewer from './HeaderReviewer';
 import FooterReviewer from './FooterReviewer';
+import TopButton from '../TopButton';
 
 const AnnouncementsReviewer = () => {
     const { variableValue, setVariableValue } = useContext(AppContext);
@@ -30,6 +31,7 @@ const AnnouncementsReviewer = () => {
 
     return (
         <section>
+            <TopButton/>
             <HeaderReviewer/>
             <Breadcrumb style={{backgroundColor:' #E8E7E7'}}>
 <Breadcrumb.Item style={{marginLeft:'20px'}}><Link to="/reviewer-home">Home</Link></Breadcrumb.Item>

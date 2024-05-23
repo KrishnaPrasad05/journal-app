@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 import { Breadcrumb, Button, Card, Col, Container, Form, ListGroup, Modal, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import AppContext from '../AppContext';
+import TopButton from '../TopButton';
 
 function SubmitPaperComp() {
 
@@ -336,6 +337,7 @@ function SubmitPaperComp() {
 
   return (
     <div>
+      <TopButton/>
         <Breadcrumb style={{backgroundColor:' #E8E7E7'}}>
  <Breadcrumb.Item style={{marginLeft:'20px'}}><Link to="/">Home</Link></Breadcrumb.Item>
  <Breadcrumb.Item active>Submit Paper</Breadcrumb.Item>

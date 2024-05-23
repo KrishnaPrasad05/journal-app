@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import AppContext from '../AppContext'
 import AdminHeader from '../Admin/Adminheader'
 import FooterAdmin from './FooterAdmin'
+import TopButton from '../TopButton'
 
 function AnnouncementsAdmin() {
     const [contactContents, setContactContents] = useState([]);
@@ -97,6 +98,7 @@ const handleDelete = (index) => {
 };
   return (
     <div>
+      <TopButton/>
         <AdminHeader/>
         <Breadcrumb style={{backgroundColor:' #E8E7E7'}}>
 <Breadcrumb.Item style={{marginLeft:'20px'}}><Link to="/admin-home">Home</Link></Breadcrumb.Item>
