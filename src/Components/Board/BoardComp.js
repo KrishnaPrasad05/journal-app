@@ -34,8 +34,8 @@ function BoardComp() {
                     <Image src={man.reviewerPic} style={{width:'100px',height:'100px',borderRadius:'5px'}}/>
                 </div>
                 <div style={{lineHeight:'15px'}}>
-                    <p style={{color:'#A01E1E',fontWeight:600}}>{man.reviewerName},{man.reviewerDesignation}</p>
-                    
+                    <p style={{color:'#A01E1E',fontWeight:600}}>{man.reviewerName}</p>
+                    <p style={{color:'grey'}}>{man.reviewerDesignation}</p>
                     <p style={{color:'#302CD4'}}>{man.reviewerCollege}</p>
                 </div>
             </div>

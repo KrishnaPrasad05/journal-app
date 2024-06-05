@@ -23,16 +23,14 @@ function JoinReviewerComp() {
     const [showModal, setShowModal] = useState(false);
 
 
-    useEffect(()=>{
-        window.scrollTo(0,0);
-       })
+    
     const handleSubmit = async (e) => {
         e.preventDefault();
         const errors = validateForm(formData);
         setFormErrors(errors);
         if (Object.keys(errors).length === 0) {
             try {
-                const response = await fetch(`${variableValue}/reviewers`, {
+                const response = await fetch(`${variableValue}/joinReviewer`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

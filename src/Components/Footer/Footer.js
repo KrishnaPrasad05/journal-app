@@ -27,16 +27,16 @@ function Footer() {
                 </Col>
                 <Col xs={12} sm={6} md={6} xl={3}>
                 <h4 style={{color:'yellow'}}>Useful Links</h4>
-                <ul style={{fontWeight:600,lineHeight:'35px',listStyle:'none'}}>
- <li><a href='/' style={{textDecoration:'none',color:'white'}}>Home</a></li>
- <li><a href='/about-us' style={{textDecoration:'none',color:'white'}}>About us</a></li>
- <li><a href='/guidelines' style={{textDecoration:'none',color:'white'}}>Guidelines</a></li>
- <li><a href='/submit-paper' style={{textDecoration:'none',color:'white'}}>Submit Paper</a></li>
- <li><a href='/processing-charges' style={{textDecoration:'none',color:'white'}}>Processing Fee</a></li>
+               
+ <p><a href='/' style={{textDecoration:'none',color:'white'}}>Home</a></p>
+ <p><a href='/about-us' style={{textDecoration:'none',color:'white'}}>About us</a></p>
+ <p><a href='/guidelines' style={{textDecoration:'none',color:'white'}}>Guidelines</a></p>
+ <p><a href='/submit-paper' style={{textDecoration:'none',color:'white'}}>Submit Paper</a></p>
+ <p><a href='/processing-charges' style={{textDecoration:'none',color:'white'}}>Processing Fee</a></p>
 
- <li><a href='/contact-us' style={{textDecoration:'none',color:'white'}}> Contact Us</a></li>
+ <p><a href='/contact-us' style={{textDecoration:'none',color:'white'}}> Contact Us</a></p>
 
- </ul>
+
                 </Col>
                 <Col xs={12} sm={6} md={6} xl={3}>
                 <h4 style={{color:'yellow'}}>Get in touch</h4>

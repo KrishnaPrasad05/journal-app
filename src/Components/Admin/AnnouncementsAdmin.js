@@ -66,9 +66,7 @@ announceTo:'',
 announcementContent: ''});
 }
 
-useEffect(()=>{
-  window.scrollTo(0,0);
- })
+
 
 
 useEffect(() => {
@@ -110,11 +108,11 @@ const handleDelete = (index) => {
             <Row style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
             <Form style={{backgroundColor:'#FBF3CB',padding:'15px',width:'50rem',borderRadius:'10px'}}>
       <Form.Group className="mb-3" controlId="announcementTitle">
-        <Form.Label>Name</Form.Label>
+        <Form.Label>Title of announcement</Form.Label>
         <Form.Control type="text" name='announcementTitle' placeholder="Enter name " value={formData.announcementTitle} onChange={handleInputChange} />
       </Form.Group>
       <Form.Group className="mb-3" controlId="announceTo">
-        <Form.Label>Email address</Form.Label>
+        <Form.Label>Announce to</Form.Label>
         <Form.Select name="announceTo" aria-label="announceTo" value={formData.announceTo} onChange={handleInputChange}>
                       <option value="">Select category</option>
                       <option value="User">User</option>
@@ -122,8 +120,8 @@ const handleDelete = (index) => {
                     </Form.Select>
       </Form.Group>
       <Form.Group className="mb-3" controlId="announcementContent">
-        <Form.Label>Enter your query</Form.Label>
-        <Form.Control as="textarea" rows={3} type="text" name='announcementContent' placeholder="Enter query " value={formData.announcementContent} onChange={handleInputChange}/>
+        <Form.Label>Announcement</Form.Label>
+        <Form.Control as="textarea" rows={3} type="text" name='announcementContent' placeholder="Enter message " value={formData.announcementContent} onChange={handleInputChange}/>
       </Form.Group>
       <Row>
                 <Col className='m-2 d-flex justify-content-center'>

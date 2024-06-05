@@ -184,9 +184,7 @@ function SubmitPaperComp() {
     }
   };
 
-  useEffect(()=>{
-    window.scrollTo(0,0);
-   })
+  
 
   // Function to handle form field changes
   const handleInputChange = (e) => {
