@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Accordion, Breadcrumb, Button, Card, Col, Container, Image, ListGroup, Row } from 'react-bootstrap'
 import {  Link } from 'react-router-dom';
 import NumberScroller from '../NumberScroller';
@@ -33,6 +33,9 @@ import FooterAdmin from './FooterAdmin';
 import TopButton from '../TopButton';
 
 function HomeAdmin() {
+    useEffect(()=>{
+        window.scrollTo(0,0);
+       })
   return (
     <div>
         <TopButton/>

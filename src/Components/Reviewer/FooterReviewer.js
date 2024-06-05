@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Col, Container, Image, Row } from 'react-bootstrap'
 import logo from '../../Assets/Images/Logo.png';
 import { Link } from 'react-router-dom';
 function FooterReviewer() {
+  
   return (
     <div>
         <Container fluid style={{backgroundColor:'#A01E1E'}}>

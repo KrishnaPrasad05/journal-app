@@ -11,6 +11,10 @@ function AddReviewer() {
     const [password, setPassword] = useState('');
     const [selectedReviewerIndex, setSelectedReviewerIndex] = useState(null); // Define selectedReviewerIndex
 
+
+    useEffect(()=>{
+        window.scrollTo(0,0);
+       })
     useEffect(() => {
         fetch('https://ijrma-server.onrender.com/joinReviewer')
             .then(response => response.json())

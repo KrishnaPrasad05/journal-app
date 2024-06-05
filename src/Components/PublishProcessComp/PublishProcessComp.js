@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Breadcrumb, Card, CardBody, CardHeader, Col, Container, Image, ListGroup, Row } from 'react-bootstrap'
 import paper from '../../Assets/Images/submit.png'
 import review from '../../Assets/Images/documents.png'
@@ -7,6 +7,9 @@ import publish from '../../Assets/Images/publishing.png'
 import { Link } from 'react-router-dom'
 import TopButton from '../TopButton'
 function PublishProcessComp() {
+    useEffect(()=>{
+        window.scrollTo(0,0);
+       })
   return (
     <div>
         <TopButton/>

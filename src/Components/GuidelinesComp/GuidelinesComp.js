@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Breadcrumb, Card, Col, Container, Image, ListGroup, Row } from 'react-bootstrap'
 import check from '../../Assets/Images/check.png'
 import flow from '../../Assets/Images/flowchart.jpg'
 import { Link } from 'react-router-dom'
 import TopButton from '../TopButton'
 function GuidelinesComp() {
+    useEffect(()=>{
+        window.scrollTo(0,0);
+       })
   return (
     <div>
         <TopButton/>

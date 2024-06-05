@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Breadcrumb, Card, Col, Container, ListGroup, Row } from 'react-bootstrap'
 import {  Link } from 'react-router-dom';
 import TopButton from '../TopButton';
+import { color } from 'chart.js/helpers';
 function EditorDeskComp() {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+   })
   return (
     <div>
       <TopButton/>
@@ -15,11 +19,11 @@ function EditorDeskComp() {
         <Col md="10">
           <Card>
             <Card.Body>
-              <Card.Title as="h2" className="text-center">Editor's Desk</Card.Title>
+              <Card.Title as="h2" className="text-center" style={{color:'#A01E1E'}}>Editor's Desk</Card.Title>
               <Card.Text as="div">
-                <h3>Message from the Editor-in-Chief</h3>
-                <p><strong>Krishna Prasad S.</strong></p>
-                <p><strong>Editor-in-Chief, International Journal for Research in Multidisciplinary Advancements (IJRMA)</strong></p>
+                <h4 style={{color:'#302CD4'}}>Message from the Editor-in-Chief</h4>
+                <p style={{color:'green',marginTop:'20px'}}><strong>Krishna Prasad S.</strong></p>
+                <p style={{color:'grey'}}>Editor-in-Chief, International Journal for Research in Multidisciplinary Advancements (IJRMA)</p>
                 
                 <p>
                   Welcome to the International Journal for Research in Multidisciplinary Advancements (IJRMA). As the Editor-in-Chief, I am delighted to introduce our journal, which is dedicated to fostering high-quality research and disseminating significant academic contributions across various fields of study.
@@ -29,12 +33,12 @@ function EditorDeskComp() {
                   At IJRMA, we believe in the power of knowledge and the importance of sharing innovative ideas. Our journal operates with a commitment to academic excellence, rigorous peer review, and ethical publication practices. Here’s an overview of how our journal works:
                 </p>
 
-                <h4>Our Mission</h4>
+                <h4 style={{color:'#302CD4'}}>Our Mission</h4>
                 <p>
                   Our mission is to provide a reputable platform for researchers, academics, and professionals to publish their work and share it with a global audience. We strive to promote interdisciplinary research and to bridge the gap between theory and practice.
                 </p>
 
-                <h4>Submission and Review Process</h4>
+                <h4 style={{color:'#302CD4'}}>Submission and Review Process</h4>
                 <p>
                   The submission process at IJRMA is designed to be straightforward and author-friendly. Authors can submit their manuscripts through our online submission system, which ensures a smooth and efficient process. Each submission undergoes a double-blind peer review to maintain the highest standards of quality and impartiality.
                 </p>
@@ -48,22 +52,22 @@ function EditorDeskComp() {
                   <li><strong>Publication</strong>: Once accepted, the manuscript is copyedited, formatted, and published online.</li>
                 </ol>
 
-                <h4>Editorial Policies</h4>
+                <h4 style={{color:'#302CD4'}}>Editorial Policies</h4>
                 <p>
                   We uphold the principles of transparency, integrity, and fairness in all our operations. Our editorial policies are designed to ensure ethical publication practices and to prevent any form of misconduct. We adhere to the guidelines set by relevant ethical guidelines, such as those of the Committee on Publication Ethics (COPE).
                 </p>
 
-                <h4>Innovation and Impact</h4>
+                <h4 style={{color:'#302CD4'}}>Innovation and Impact</h4>
                 <p>
                   At IJRMA, we are committed to publishing research that has a significant impact on its field. We encourage submissions that introduce new ideas, propose innovative methodologies, and provide practical solutions to contemporary issues.
                 </p>
 
-                <h4>Engagement and Community</h4>
+                <h4 style={{color:'#302CD4'}}>Engagement and Community</h4>
                 <p>
                   We aim to build a vibrant community of scholars and practitioners. Through our journal, we facilitate the exchange of knowledge and foster collaborative efforts. We also encourage readers and authors to engage with us through our social media platforms and events.
                 </p>
 
-                <h4>Acknowledgements</h4>
+                <h4 style={{color:'#302CD4'}}>Acknowledgements</h4>
                 <p>
                   I would like to extend my gratitude to our dedicated editorial team, our esteemed reviewers, and our authors for their contributions. Their hard work and commitment to excellence are the driving forces behind our journal's success.
                 </p>
@@ -80,7 +84,7 @@ function EditorDeskComp() {
                   Editor-in-Chief, International Journal for Research in Multidisciplinary Advancements (IJRMA)
                 </p>
 
-                <h4>Contact Information</h4>
+                <h4 style={{color:'#302CD4'}}>Contact Information</h4>
                 <p>
                   For any inquiries or further information, please contact us at:
                 </p>

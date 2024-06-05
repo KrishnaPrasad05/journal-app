@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import HeaderReviewer from './HeaderReviewer'
 import FooterReviewer from './FooterReviewer'
 import EditorDeskComp from '../EditorDesk/EditorDeskComp'
@@ -6,6 +6,9 @@ import { Breadcrumb, Card, Col, Container, ListGroup, Row } from 'react-bootstra
 import {  Link } from 'react-router-dom';
 import TopButton from '../TopButton'
 function EditorDeskReviewer() {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+   })
   return (
     <div>
       <TopButton/>

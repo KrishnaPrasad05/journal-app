@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Breadcrumb, Card, Col, Container, ListGroup, Row, Table } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import Header from '../Header/Header'
@@ -6,6 +6,9 @@ import Footer from '../Footer/Footer'
 import TopButton from '../TopButton'
 
 function IndFee() {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+   })
   return (
     <div>
       <TopButton/>

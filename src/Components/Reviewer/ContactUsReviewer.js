@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import HeaderReviewer from './HeaderReviewer'
 import FooterReviewer from './FooterReviewer'
 import { Button, Container, Form, Row, Breadcrumb, Modal, Col } from 'react-bootstrap'
@@ -18,6 +18,9 @@ function ContactUsReviewer() {
     contacterEmail: '',
     contacterQuery: ''
   });
+  useEffect(()=>{
+    window.scrollTo(0,0);
+   })
 
   const { variableValue } = useContext(AppContext);
   const [showModal, setShowModal] = useState(false);

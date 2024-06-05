@@ -17,6 +17,10 @@ const LogInReviewerComp = () => {
     password: ''
   });
 
+  useEffect(()=>{
+    window.scrollTo(0,0);
+   })
+
   const { variableValue } = useContext(AppContext);
   const [loggedInID, setloggedInID]=useState([]);
   const [showSuccessModal, setShowSuccessModal] = useState(false);

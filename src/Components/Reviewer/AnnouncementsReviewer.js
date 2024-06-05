@@ -14,6 +14,9 @@ const AnnouncementsReviewer = () => {
     const [showModal, setShowModal] = useState(false);
     const [deleteIndex, setDeleteIndex] = useState(null);
 
+    useEffect(()=>{
+        window.scrollTo(0,0);
+       })
     useEffect(() => {
         fetch(`${variableValue}/announcements?announceTo=Reviewer`)
             .then(response => response.json())

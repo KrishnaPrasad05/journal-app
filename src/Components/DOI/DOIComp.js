@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Breadcrumb, Card, Col, Container, Image, ListGroup, Row, Table } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import doi from '../../Assets/Images/doi.jpg'
 import TopButton from '../TopButton'
 function DOIComp() {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+   })
   return (
     <div>
         <div>

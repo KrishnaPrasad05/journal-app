@@ -101,6 +101,9 @@ function BoardAdmin() {
             console.error('Error updating reviewer:', error);
         }
     };
+    useEffect(()=>{
+        window.scrollTo(0,0);
+       })
 
     const handleChange = (e) => {
         const { name, value } = e.target;

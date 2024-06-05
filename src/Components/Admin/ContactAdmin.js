@@ -25,6 +25,10 @@ const ContactAdmin = () => {
             .catch(error => console.error('Error fetching reported contents:', error));
     }, []);
 
+    useEffect(()=>{
+        window.scrollTo(0,0);
+       })
+
     const handleDelete = (index) => {
         // Sending delete request to the server
         fetch(`${variableValue}/contactUs/${contactContents[index].id}`, {

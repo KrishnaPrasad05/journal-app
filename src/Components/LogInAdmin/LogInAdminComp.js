@@ -83,6 +83,9 @@ const LogInAdminComp = () => {
       setShowFailureModal(true);
     }
   };
+  useEffect(()=>{
+    window.scrollTo(0,0);
+   })
 
   return (
     <section>

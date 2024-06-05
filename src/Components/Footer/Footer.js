@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <div>
-        <Container fluid style={{backgroundColor:'#A01E1E'}}>
+        <Container fluid style={{backgroundColor:'#A01E1E',marginTop:'1rem'}}>
             <Row className='pt-3'>
                 <Col xs={12} sm={6} md={6} xl={3}>
                 <Image src={logo} style={{width:'400px',height:'150px'}} className='img-fluid'/>

@@ -53,6 +53,10 @@ function PaperReviewComp() {
         setUpdatedCertificate(event.target.value);
     };
 
+    useEffect(()=>{
+        window.scrollTo(0,0);
+       })
+
     const handleUpdateSubmit = () => {
         const updatedData = {
             status: updatedStatus,

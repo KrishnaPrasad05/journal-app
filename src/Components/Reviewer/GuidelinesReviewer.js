@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import HeaderReviewer from './HeaderReviewer'
 import GuidelinesComp from '../GuidelinesComp/GuidelinesComp'
 import FooterReviewer from './FooterReviewer'
@@ -8,6 +8,9 @@ import flow from '../../Assets/Images/flowchart.jpg'
 import { Link } from 'react-router-dom'
 import TopButton from '../TopButton'
 function GuidelinesReviewer() {
+    useEffect(()=>{
+        window.scrollTo(0,0);
+       })
   return (
     <div>
         <TopButton/>

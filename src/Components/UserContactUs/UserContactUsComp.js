@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 
 import { Button, Container, Form, Row, Breadcrumb, Modal, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
@@ -17,6 +17,10 @@ function UserContactUsComp() {
     contacterEmail: '',
     contacterQuery: ''
   });
+
+  useEffect(()=>{
+    window.scrollTo(0,0);
+   })
 
   const { variableValue } = useContext(AppContext);
   const [showModal, setShowModal] = useState(false);

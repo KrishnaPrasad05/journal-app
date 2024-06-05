@@ -38,6 +38,10 @@ function HomeReviewer() {
       targetRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }, []); */
+
+  useEffect(()=>{
+    window.scrollTo(0,0);
+   })
   return (
     <div>
       <TopButton/>

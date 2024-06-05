@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Breadcrumb, Card, Col, Container, ListGroup, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Header from '../Header/Header';
@@ -8,7 +8,9 @@ import TopButton from '../TopButton';
 
 const JoinUs = () => {
   const emailAddress = 'ijrmapublishers@gmail.com'; // Replace with your actual email address
-
+  useEffect(()=>{
+    window.scrollTo(0,0);
+   })
   return (
     <div>
       <TopButton/>

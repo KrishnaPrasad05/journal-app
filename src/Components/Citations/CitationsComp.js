@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import BarGraph from '../BarGraph'; // Path to your BarGraph component
 import { Link } from 'react-router-dom';
 import { Breadcrumb, Card, ListGroup,Container,Col,Row } from 'react-bootstrap';
 import TopButton from '../TopButton';
 
 const CitationComp = () => {
- 
+ useEffect(()=>{
+  window.scrollTo(0,0);
+ })
 
   return (
     <div>

@@ -22,6 +22,10 @@ function CurrentIssueComp() {
     const filteredPapers = currentPaper.filter(paper =>
         paper.title.toLowerCase().includes(searchTerm.toLowerCase())
     );
+
+    useEffect(()=>{
+      window.scrollTo(0,0);
+     })
   return (
     <div>
       <TopButton/>

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Breadcrumb, Button, Card, Col, Container, Form, ListGroup, Modal, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import AppContext from '../AppContext';
@@ -183,6 +183,10 @@ function SubmitPaperComp() {
       console.error('Error:', error);
     }
   };
+
+  useEffect(()=>{
+    window.scrollTo(0,0);
+   })
 
   // Function to handle form field changes
   const handleInputChange = (e) => {

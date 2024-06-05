@@ -14,6 +14,9 @@ function BoardReviewer() {
             .then(data => setReviewer(data))
             .catch(error => console.error('Error fetching reported contents:', error));
     }, []);
+    useEffect(()=>{
+      window.scrollTo(0,0);
+     })
   return (
     <div>
       <TopButton/>

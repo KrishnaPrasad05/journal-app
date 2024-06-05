@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Accordion, Breadcrumb, Card, Col, Container,ListGroup,Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import TopButton from '../TopButton'
 
 function SplIssueComp() {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+   })
   return (
     <div>
       <TopButton/>
