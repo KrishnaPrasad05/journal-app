@@ -18,9 +18,6 @@ function UserContactUsComp() {
     contacterQuery: ''
   });
 
-  useEffect(()=>{
-    window.scrollTo(0,0);
-   })
 
   const { variableValue } = useContext(AppContext);
   const [showModal, setShowModal] = useState(false);
@@ -103,7 +100,7 @@ function UserContactUsComp() {
     <div>
       <TopButton/>
       <Breadcrumb style={{ backgroundColor: ' #E8E7E7' }}>
-        <Breadcrumb.Item style={{ marginLeft: '20px' }}><Link to="/reviewer-home">Home</Link></Breadcrumb.Item>
+        <Breadcrumb.Item style={{ marginLeft: '20px' }}><Link to="/">Home</Link></Breadcrumb.Item>
         <Breadcrumb.Item active>Contact Us</Breadcrumb.Item>
       </Breadcrumb>
       <Container className='p-3 mt-3 mb-5'>
